@@ -6,7 +6,9 @@ namespace Day_11
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            TableManager tM = new TableManager("dbo.students");
+            tM.AddColumns("ID", "Name", "Surname", "PhoneNumber", "HomeAdress");
+            tM.AddRow("1", "Фаридун", "Бердиев", "+992901915905", "Дехоти 45/3");
         }
     }
 }
